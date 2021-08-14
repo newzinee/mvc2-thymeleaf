@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="template/layout/base :: common_header(~{::title},~{::link},~{::yj})">
+    <title>메인 타이틀</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/themes/smoothness/jquery-ui.css}">
+
+    <div>
+        외부
+        <div>yj1</div>
+    </div>
+
+    <div>이 태그는 빼고싶어도 못뺴낭</div>
+
+    <div th:fragment="yj">id</div>
+
+    <b>왜 다나옴</b>
+
+</head>
+<body> 메인 컨텐츠</body>
+</html>
